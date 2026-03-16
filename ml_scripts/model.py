@@ -107,7 +107,8 @@ def compute_slice_metrics(
         results.append(line)
 
     logging.info(f"Saving the data slice metrics file to {data_slice_path}")
-    with open(output_file, "w") as f:
+    with open(output_file, "a") as f:
+        f.write(f"=== Metrics for feature: {feature} ===\n")
         for r in results:
             f.write(r + "\n")
 
