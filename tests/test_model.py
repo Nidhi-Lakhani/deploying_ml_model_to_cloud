@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
-from ml_scripts.pre_processing import process_data
+from deploying_ml_model_to_cloud.ml_scripts.pre_processing import process_data
 from ml_scripts.model import train_model, model_inference, compute_metrics
 
 
@@ -24,7 +24,7 @@ def test_train_model_returns_model(dummy_data, categorical_features):
     model = train_model(X, y)
 
     assert isinstance(model, LogisticRegression)
-
+    
 
 def test_compute_metrics_returns_floats(dummy_data, categorical_features):
     """
