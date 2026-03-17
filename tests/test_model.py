@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
-from deploying_ml_model_to_cloud.ml_scripts.pre_processing import process_data
+from ml_scripts.pre_processing import process_data
 from ml_scripts.model import train_model, model_inference, compute_metrics
 
 
