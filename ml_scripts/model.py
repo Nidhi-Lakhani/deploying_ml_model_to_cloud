@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import precision_score, recall_score, f1_score
 from joblib import dump
 
-from pre_processing import process_data
+from ml_scripts.pre_processing import process_data
 
 logging.basicConfig(level=logging.INFO)
 
