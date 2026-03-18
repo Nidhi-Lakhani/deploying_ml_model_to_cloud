@@ -35,3 +35,48 @@ def categorical_features():
         "sex",
         "native-country",
     ]
+
+@pytest.fixture
+def person_high_income():
+    """
+    Dummy person for our prediction with high income. 
+    """
+    return {
+        "age": 47,
+        "workclass": "Private",
+        "fnlgt": 209642,
+        "education": "Masters",
+        "education-num": 13,
+        "marital-status": "Married-civ-spouse",
+        "occupation": "Exec-managerial",
+        "relationship": "Husband",
+        "race": "White",
+        "sex": "Male",
+        "capital-gain": 12000,
+        "capital-loss": 0,
+        "hours-per-week": 40,
+        "native-country": "United-States"
+    }
+
+
+@pytest.fixture
+def person_low_income():
+    """
+    Dummy person for our prediction with low income. 
+    """
+    return {
+        'age': 18,
+        'workclass': 'State-gov',
+        'fnlgt': 1000,
+        'education': 'HS-grad',
+        'education-num': 1,
+        'marital-status': 'Never-married',
+        'occupation': 'Adm-clerical',
+        'relationship': 'Not-in-family',
+        'race': 'White',
+        'sex': 'Male',
+        'capital-gain': 2174,
+        'capital-loss': 0,
+        'hours-per-week': 10,
+        'native-country': 'United-States'
+    }
